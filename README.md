@@ -17,7 +17,11 @@ Before starting the workshop, make sure that you have access to a computer with 
 
 ## Introduction
 
-TODO
+TODO: present datasets and swagger page
+
+https://pygeoapi.glodal-inc.net/
+
+https://pygeoapi.glodal-inc.net/openapi?f=html
 
 ## QGIS
 
