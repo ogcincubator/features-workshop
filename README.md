@@ -32,6 +32,14 @@ Explore OGC API using different technologies.
 
 * [QGIS](QGIS.md)
 
+## Resources
+
+Continue your journey, by learning more about OGC API with these learning resources:
+
+* OGC API Workshop: https://ogcapi-workshop.ogc.org/
+
+* pygeoapi Workshop: https://dive.pygeoapi.io/
+
 ## License
 
 This workshop is licensed under MIT. Read a copy of the license [here](./LICENSE).
