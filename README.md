@@ -4,17 +4,16 @@ This workshop shows different ways of consuming data from [OGC API - Features](h
 
 ## Requirements
 
-* Basic knowledge of python/ jupyter notebooks is required for some parts of the workshop.
-* Basic knowledge of frontend web development (e.g.: HTML + JavaScript) is required for some parts of the workshop.
-* Some knowledge about REST architecture is recommended (e.g.: http verbs, status codes), although not required.
-
-No previous knowledge of GIS or OGC Standards is required for this workshop.
+* ✅ Basic knowledge of python/ jupyter notebooks is required for some parts of the workshop.
+* ✅ Basic knowledge of frontend web development (e.g.: HTML + JavaScript) is required for some parts of the workshop.
+* ❎ Some knowledge about REST architecture is recommended (e.g.: http verbs, status codes), although not required.
+* ❌ No previous knowledge of GIS or OGC Standards is required for this workshop.
 
 Before starting the workshop, make sure that you have access to a computer with the following installed:
 
 * ✅ QGIS: you can follow the [instructions on the official website](https://qgis.org/resources/installation-guide/) to install it.
 * ✅ Jupyter notebook: You can follow [these](https://jupyter.org/install) instructions to install it with pip.
-* ✅ A text editor: I like [VS code](https://code.visualstudio.com/), but feel free to choose whatever you like.
+* ✅ A text editor: I 💙 [VS code](https://code.visualstudio.com/), but feel free to choose whatever you like.
 
 
 ## Introduction
