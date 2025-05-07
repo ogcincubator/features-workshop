@@ -21,11 +21,3 @@
 4. Explore the collection in the QGIS map view.
 
 ![View Layer](img/5_stylelayer.png)
-
-## Python/ OWSLib
-
-TODO
-
-## JavaScript/ LeafLet
-
-TODO
