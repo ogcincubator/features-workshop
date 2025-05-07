@@ -31,3 +31,9 @@ https://pygeoapi.glodal-inc.net/openapi?f=html
 Explore OGC API using different technologies.
 
 * [QGIS](QGIS.md)
+
+## License
+
+This workshop is licensed under MIT. Read a copy of the license [here](./LICENSE).
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
