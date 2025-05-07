@@ -4,4 +4,4 @@ This tutorial shows how to plot features in an interactive map in HTML/JS, using
 
 *Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps.*
 
-Open [demo-oaf.htm](./demo-oaf.htm) in a text editor and in a browser. 
+Open [demo-oaf.htm](./demo-oaf.htm) in a text editor and in a browser. Follow the rest of the tutorial there.
