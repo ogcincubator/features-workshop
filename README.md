@@ -17,15 +17,30 @@ Before starting the workshop, make sure that you have access to a computer with 
 
 ## Introduction
 
-TODO: present datasets and swagger page
+In this workshop, we are going to connect to this deployment of [pygeoapi](https://pygeoapi.io/) provided by [GLODAL](https://glodal-inc.com/en-US/) (thank you!🙏💚) 
 
 https://pygeoapi.glodal-inc.net/
 
 https://pygeoapi.glodal-inc.net/openapi?f=html
 
+* Present API
+* Present datasets
+
 ## QGIS
 
-TODO
+* Intro QGIS
+
+1. `Add WFS/OGC API - Features Layer...` from the Layer menu (or browser panel).
+
+![Zoom to Japan](img/0_zoomjapan.png)
+
+![Add WFS layer](img/1_addlayer.png)
+
+![Connect to server](img/2_serverconnection.png)
+
+![Add collection](img/3_addcollection.png)
+
+![View Layer](img/5_stylelayer.png)
 
 ## Python/ OWSLib
 
