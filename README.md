@@ -31,6 +31,8 @@ https://pygeoapi.glodal-inc.net/openapi?f=html
 Explore OGC API using different technologies.
 
 * [QGIS](QGIS.md)
+* [Python/OWSLib](python.md)
+* [JavaScript/LeafLet](javascript.md)
 
 ## Resources
 
