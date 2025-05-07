@@ -14,6 +14,8 @@ Before starting the workshop, make sure that you have access to a computer with 
 
 * ✅ QGIS: you can follow the [instructions on the official website](https://qgis.org/resources/installation-guide/) to install it.
 * ✅ Jupyter notebook: You can follow [these](https://jupyter.org/install) instructions to install it with pip.
+* ✅ A text editor: I like [VS code](https://code.visualstudio.com/), but feel free to choose whatever you like.
+
 
 ## Introduction
 

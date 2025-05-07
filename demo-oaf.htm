@@ -1,0 +1,72 @@
+<html>
+<head><title>OGC API - Tiles Styling</title></head>
+<body>
+<div id="map" style="width:100vw;height:100vh;"></div>
+
+    <!-- load leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <!-- load VectorGrid extension -->
+    <script src="https://unpkg.com/leaflet.vectorgrid@1.3.0/dist/Leaflet.VectorGrid.bundled.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+
+    <a class="github-fork-ribbon" href="https://github.com/emotional-cities/vtiles-example.git" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+<script>
+
+
+    url = 'https://emotional.byteroad.net/collections/hex350_grid_cardio_1920/items?limit=5000';
+    //url = 'https://pygeoapi.glodal-inc.net/collections/W01/items?limit=500';
+
+    (async () => {
+      const border = await fetch(url, {
+        headers: {
+          'Accept': 'application/geo+json'
+        }
+      }).then(response => response.json());
+
+        var myStyle = {
+        "color": "#ff7800",
+        "weight": 5,
+        "opacity": 0.65
+        };
+        var dams = L.geoJSON(border, {style: myStyle});
+
+        var World_Light_Gray_Base =
+            new L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+          attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+            minZoom: 1,
+            maxZoom: 16
+      });
+
+      var OpenStreetMap_Mapnik = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      });
+
+        map = L.map('map', {layers: [World_Light_Gray_Base, dams]}).setView({ lng: 139.839478, lat: 35.652832 }, 11);
+
+        var overlayMaps = {
+            "ダム（W01-05-g）": dams,
+        };
+
+        var baseMaps = {
+            "OpenStreetMap": OpenStreetMap_Mapnik,
+            "Esri World Gray Canvas": World_Light_Gray_Base
+        };
+
+        var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+      
+        })();
+
+
+
+
+</script>
+</body>
+</html>
