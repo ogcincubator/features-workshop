@@ -15,12 +15,12 @@
     <script src="https://unpkg.com/leaflet.vectorgrid@1.3.0/dist/Leaflet.VectorGrid.bundled.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 
-    <a class="github-fork-ribbon" href="https://github.com/emotional-cities/vtiles-example.git" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <a class="github-fork-ribbon" href="https://github.com/ogcincubator/sushi-workshop.git" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 <script>
 
 
-    url = 'https://emotional.byteroad.net/collections/hex350_grid_cardio_1920/items?limit=5000';
-    //url = 'https://pygeoapi.glodal-inc.net/collections/W01/items?limit=500';
+    //url = 'https://emotional.byteroad.net/collections/hex350_grid_cardio_1920/items?limit=5000';
+    url = 'https://pygeoapi.glodal-inc.net/collections/W01/items?limit=500';
 
     (async () => {
       const border = await fetch(url, {
@@ -48,7 +48,7 @@
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       });
 
-        map = L.map('map', {layers: [World_Light_Gray_Base, dams]}).setView({ lng: 139.839478, lat: 35.652832 }, 11);
+        map = L.map('map', {layers: [World_Light_Gray_Base, dams]}).setView({ lng: 140.3160462, lat: 41.8579149 }, 7);
 
         var overlayMaps = {
             "ダム（W01-05-g）": dams,
