@@ -1,4 +1,4 @@
-# Workshop: Integrating Data from OGC API into your Applications 🍣 OGC APIのデータをアプリケーションに取り込むワークショップ
+# Workshop: Integrating Data from OGC API into your Applications 🍣 OGC APIのデータをアプリケーションで活用するワークショップ
 
 This workshop shows different ways of consuming data from [OGC API - Features](https://features.developer.ogc.org/) services. After completing this workshop, you should be able to integrate OGC API - Features into your workflows.
 
@@ -39,9 +39,9 @@ https://pygeoapi.glodal-inc.net/
 https://pygeoapi.glodal-inc.net/openapi?f=html
 
 <!-- It is okay to link the presentations here for sharing it with participants? -->
-* Introduction to OGC Standards / OGC Standards 入門
-* Introduction to OGC API / OGC API 入門
-* Present datasets 
+* [Introduction to geospatial / ジオ入門](https://drive.google.com/file/d/1F85oN-JSbPC0H7QOxh9IOlf9e_8obp2c/view?usp=sharing)
+* [Introduction to OGC Standards / OGC Standards 入門](https://drive.google.com/file/d/1h1jUYN91cWzIBpg-rFcncaWao1QZQI0E/view?usp=sharing)
+* [Introduction to OGC API / OGC API 入門](https://drive.google.com/file/d/1rFQzysxdXK6XGQxw5f7M8nMWET8SA2qD/view?usp=sharing)
 
 ## Tutorials チュートリアル
 
