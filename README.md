@@ -22,11 +22,11 @@ Before starting the workshop, make sure that you have access to a computer with 
 ワークショップを開始する前に、以下のソフトウェアがインストールされたコンピュータをご用意ください。
 
 * ✅ QGIS: you can follow the [instructions on the official website](https://qgis.org/resources/installation-guide/) to install it.
-* ✅ QGIS: 公式ウェブサイトの手順に従ってインストールしてください。
+* ✅ QGIS: [公式ウェブサイトの手順](https://qgis.org/resources/installation-guide/)に従ってインストールしてください。
 * ✅ Jupyter notebook: You can follow [these](https://jupyter.org/install) instructions to install it with pip.
-* ✅ Jupyter Notebook: pipを使用してインストールするには、こちらの手順に従ってください。
+* ✅ Jupyter Notebook: pipを使用してインストールするには、[こちら](https://jupyter.org/install)の手順に従ってください。
 * ✅ A text editor: I 💙 [VS code](https://code.visualstudio.com/), but feel free to choose whatever you like.
-* ✅ テキストエディタ: 私はVS Codeが大好きです💙が、お好きなものをご自由にお選びください。
+* ✅ テキストエディタ: [VS Code](https://code.visualstudio.com/)をお薦めします💙が、お好きなものをご自由にお選びください。
 
 ## Introduction イントロダクション
 
