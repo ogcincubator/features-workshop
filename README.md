@@ -10,7 +10,7 @@ Después de completar este taller, deberías ser capaz de integrar OGC API - Fea
 * ✅ Basic knowledge of python/ jupyter notebooks is required for some parts of the workshop | _Se requiere conocimiento básico de Python y Jupyter Notebooks para algunas partes del taller._
 * ✅ Basic knowledge of frontend web development (e.g.: HTML + JavaScript) is required for some parts of the workshop. | _Se requiere conocimiento básico de desarrollo web frontend (por ejemplo: HTML + JavaScript) para algunas partes del taller._
 * ❎ Some knowledge about REST architecture is recommended (e.g.: HTTP verbs, status codes), although not required. | _Se recomienda tener algunos conocimientos sobre la arquitectura REST (por ejemplo: verbos HTTP, códigos de estado), aunque no es obligatorio._
-* ❌ No previous knowledge of GIS or OGC Standards is required for this workshop. | _No se requiere conocimiento previo de SIG (GIS) ni de los estándares OGC para este taller._
+* ❌ No previous knowledge of GIS or OGC Standards is required for this workshop. | _No se requiere conocimiento previo de SIG ni de los estándares OGC para este taller._
 
 Before starting the workshop, make sure that you have access to a computer with the following installed:
 
