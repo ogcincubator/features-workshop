@@ -51,6 +51,12 @@ _Continúe su aprendizaje y profundize más sobre la API de OGC con estos recurs
 * OGC API Workshop| _Taller de OGC API: https://ogcapi-workshop.ogc.org/_
 * pygeoapi Workshop| _Taller de pygeoapi: https://dive.pygeoapi.io/_
 
+## Credits| Agradecimientos
+
+This workshop was made possible with the contributions from [Hiroyuki Miyazaki](https://github.com/heromiya) and his team on technical content, and from Mayte Toscano on the Spanish translation review 💙. A BIG Thanks to all of them! 🙏
+
+_Este taller fue posible gracias a las contribuciones de [Hiroyuki Miyazaki](https://github.com/heromiya) y su equipo en el contenido técnico, y de Mayte Toscano en la revisión de la traducción al español 💙. ¡Muchas gracias a todos! 🙏_
+
 ## License| Licencia
 
 This workshop is licensed under MIT. Read a copy of the license [here](./LICENSE).
