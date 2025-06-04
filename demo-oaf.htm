@@ -15,12 +15,10 @@
     <script src="https://unpkg.com/leaflet.vectorgrid@1.3.0/dist/Leaflet.VectorGrid.bundled.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 
-    <a class="github-fork-ribbon" href="https://github.com/ogcincubator/sushi-workshop.git" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <!-- <a class="github-fork-ribbon" href="https://github.com/ogcincubator/sushi-workshop.git" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a> -->
 <script>
 
-
-    //url = 'https://emotional.byteroad.net/collections/hex350_grid_cardio_1920/items?limit=5000';
-    url = 'https://pygeoapi.glodal-inc.net/collections/W01/items?limit=500';
+    url = 'https://emotional.byteroad.net/collections/lisbon_vibrancy_index/items?limit=5000';
 
     (async () => {
       const border = await fetch(url, {
@@ -29,12 +27,26 @@
         }
       }).then(response => response.json());
 
+      /*
         var myStyle = {
         "color": "#ff7800",
-        "weight": 5,
+        "weight": 3,
         "opacity": 0.65
-        };
-        var dams = L.geoJSON(border, {style: myStyle});
+        };*/
+
+
+      var myStyle = function(feature) {
+        if (feature.properties.vibrancy == 0) {
+          return {color: "#ff7800", "opacity": 0}}
+        if (feature.properties.vibrancy < 1.5) {
+          return {color: "#ff7800", "opacity": 0.65}}
+        else if (feature.properties.vibrancy >=1.5 && feature.properties.vibrancy < 2 ){
+          return {color: "#ff0000", "opacity": 0.65}}
+        else {
+          return {color: "black", "opacity": 0.65}}; 
+        }
+
+        var lisbon_vibrancy_index = L.geoJSON(border, {style: myStyle});
 
         var World_Light_Gray_Base =
             new L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
@@ -48,10 +60,10 @@
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       });
 
-        map = L.map('map', {layers: [OpenStreetMap_Mapnik, dams]}).setView({ lng: 140.3160462, lat: 41.8579149 }, 7);
+        map = L.map('map', {layers: [OpenStreetMap_Mapnik, lisbon_vibrancy_index]}).setView({ lng: -9.13333, lat: 38.71667 }, 12);
 
         var overlayMaps = {
-            "ダム（W01-05-g）": dams,
+            "Vibrancy index": lisbon_vibrancy_index,
         };
 
         var baseMaps = {
