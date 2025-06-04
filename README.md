@@ -1,73 +1,60 @@
-# Workshop: Integrating Data from OGC API into your Applications 🍣 OGC APIのデータをアプリケーションで活用するワークショップ
+# Workshop: Integrating Data from OGC API into your Applications | Taller: Integración de Datos desde la API de OGC en tus Aplicaciones
 
 This workshop shows different ways of consuming data from [OGC API - Features](https://features.developer.ogc.org/) services. After completing this workshop, you should be able to integrate OGC API - Features into your workflows.
 
-このワークショップでは、OGC API - Features サービスからデータを様々な方法で利用する手順を紹介します。このワークショップを修了すると、OGC API - Features を自分のワークフローに統合できるようになります。
+_Este taller muestra diferentes formas de consumir datos desde los servicios de OGC API - Features.
+Después de completar este taller, deberías ser capaz de integrar OGC API - Features en tus flujos de trabajo._
 
-## Requirements 前提条件
+## Requirements| Requisitos
 
-※日本語注：参加者の皆様には一通りデモストレーションを体験いただき、QGIS, Jupyter, Leafletの**いずれか**を使ったプロトタイピングに取り組んでいただきます。以下の要件に満たない場合は、メンターがガイドしますのでご安心ください。
-
-* ✅ Basic knowledge of python/ jupyter notebooks is required for some parts of the workshop.
-* ✅ ワークショップの一部では、Python / Jupyter Notebook の基本的な知識が必要です。
-* ✅ Basic knowledge of frontend web development (e.g.: HTML + JavaScript) is required for some parts of the workshop.
-* ✅ ワークショップの一部では、フロントエンドウェブ開発（例: HTML + JavaScript）の基本的な知識が必要です。
-* ❎ Some knowledge about REST architecture is recommended (e.g.: http verbs, status codes), although not required.
-* ❎ RESTアーキテクチャに関する知識（例: HTTPメソッド、ステータスコード）が推奨されますが、必須ではありません。
-* ❌ No previous knowledge of GIS or OGC Standards is required for this workshop.
-* ❌ このワークショップでは、GISまたはOGC標準に関する事前の知識は不要です。
+* ✅ Basic knowledge of python/ jupyter notebooks is required for some parts of the workshop | _Se requiere conocimiento básico de Python y Jupyter Notebooks para algunas partes del taller._
+* ✅ Basic knowledge of frontend web development (e.g.: HTML + JavaScript) is required for some parts of the workshop. | _Se requiere conocimiento básico de desarrollo web frontend (por ejemplo: HTML + JavaScript) para algunas partes del taller._
+* ❎ Some knowledge about REST architecture is recommended (e.g.: HTTP verbs, status codes), although not required. | _Se recomienda tener algunos conocimientos sobre la arquitectura REST (por ejemplo: verbos HTTP, códigos de estado), aunque no es obligatorio._
+* ❌ No previous knowledge of GIS or OGC Standards is required for this workshop. | _No se requiere conocimiento previo de SIG (GIS) ni de los estándares OGC para este taller._
 
 Before starting the workshop, make sure that you have access to a computer with the following installed:
 
-ワークショップを開始する前に、以下のソフトウェアがインストールされたコンピュータをご用意ください。
+_Antes de empezar el taller, asegúrate de tener acceso a un ordenador con lo siguiente instalado:_
 
-* ✅ QGIS: you can follow the [instructions on the official website](https://qgis.org/resources/installation-guide/) to install it.
-* ✅ QGIS: [公式ウェブサイトの手順](https://qgis.org/resources/installation-guide/)に従ってインストールしてください。
-* ✅ Jupyter notebook: You can follow [these](https://jupyter.org/install) instructions to install it with pip.
-* ✅ Jupyter Notebook: pipを使用してインストールするには、[こちら](https://jupyter.org/install)の手順に従ってください。
-* ✅ A text editor: I 💙 [VS code](https://code.visualstudio.com/), but feel free to choose whatever you like.
-* ✅ テキストエディタ: [VS Code](https://code.visualstudio.com/)をお薦めします💙が、お好きなものをご自由にお選びください。
+* ✅ QGIS: you can follow the [instructions on the official website](https://qgis.org/resources/installation-guide/) to install it. | _QGIS: Puedes seguir las [instrucciones en el sitio web oficial](https://qgis.org/resources/installation-guide/) para instalarlo._
+* ✅ Jupyter notebook: You can follow [these](https://jupyter.org/install) instructions to install it with pip. | _Jupyter Notebook: Puedes seguir [estas](https://jupyter.org/install) instrucciones para instalarlo usando pip._
+* ✅ A text editor: I 💙 [VS code](https://code.visualstudio.com/), but feel free to choose whatever you like. | _Un editor de texto: Yo 💙 [VS code](https://code.visualstudio.com/), pero siéntete libre de usar el que prefieras._
+  
+## Introduction| Introducción
 
-## Introduction イントロダクション
+In this workshop, we are going to connect to this deployment of [pygeoapi](https://pygeoapi.io/) provided by the [eMOTIONAL Cities Project](https://emotionalcities-h2020.eu/)
 
-In this workshop, we are going to connect to this deployment of [pygeoapi](https://pygeoapi.io/) provided by [GLODAL](https://glodal-inc.com/en-US/) (thank you!🙏💚) 
+_En este taller, vamos a conectarnos a esta implementación de [pygeoapi](https://pygeoapi.io/) proporcionada por el [Proyecto eMOTIONAL Cities](https://emotionalcities-h2020.eu/)._
 
-このワークショップでは、[GLODAL](https://glodal-inc.com/en-US/) 様提供（ありがとうございます！🙏💚）のこちらの[pygeoapi](https://pygeoapi.io/)デプロイメントに接続します。
+https://emotional.byteroad.net/
 
-https://pygeoapi.glodal-inc.net/
+https://emotional.byteroad.net/openapi?f=html
 
-https://pygeoapi.glodal-inc.net/openapi?f=html
+[Introduction to OGC API / Introducción a las OGC API](https://myogc1-my.sharepoint.com/:p:/g/personal/jsimoes_ogc_org/EZRAbX0oDKhBkNiir_mvHGYBFMOAGlZLury2MCuXnH0Lkg?e=W0ZbhY)
 
-<!-- It is okay to link the presentations here for sharing it with participants? -->
-* [Introduction to geospatial / ジオ入門](https://drive.google.com/file/d/1F85oN-JSbPC0H7QOxh9IOlf9e_8obp2c/view?usp=sharing)
-* [Introduction to OGC Standards / OGC Standards 入門](https://drive.google.com/file/d/1h1jUYN91cWzIBpg-rFcncaWao1QZQI0E/view?usp=sharing)
-* [Introduction to OGC API / OGC API 入門](https://drive.google.com/file/d/1rFQzysxdXK6XGQxw5f7M8nMWET8SA2qD/view?usp=sharing)
-
-## Tutorials チュートリアル
+## Tutorials| Tutoriales
 
 Explore OGC API using different technologies.
 
-様々なテクノロジを使ってOGC APIを試してみましょう。
+_Explora las OGC API usando diferentes tecnologías:_
 
 * [QGIS](QGIS.md)
 * [Python/OWSLib](python.md)
 * [JavaScript/LeafLet](javascript.md)
 
-## Resources 参考資料
+## Resources| Recursos
 
 Continue your journey, by learning more about OGC API with these learning resources:
 
-以下の学習リソースでOGC APIについてさらに学び、探求を続けましょう。
+_Continúa tu aprendizaje y profundiza más sobre la API de OGC con estos recursos:_
 
-* OGC API Workshop: https://ogcapi-workshop.ogc.org/
-* OGC APIワークショップ: https://ogcapi-workshop.ogc.org/
-* pygeoapi Workshop: https://dive.pygeoapi.io/
-* pygeoapiワークショップ: https://dive.pygeoapi.io/
+* OGC API Workshop| _Taller de OGC API: https://ogcapi-workshop.ogc.org/_
+* pygeoapi Workshop| _Taller de pygeoapi: https://dive.pygeoapi.io/_
 
-## License ライセンス
+## License| Licencia
 
 This workshop is licensed under MIT. Read a copy of the license [here](./LICENSE).
 
-このワークショップはMITライセンスに基づいています。ライセンスのコピーはこちらでお読みください。
+_Este taller está licenciado bajo MIT. Puedes leer una copia de la licencia [aquí](./LICENSE)._
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
