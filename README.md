@@ -14,11 +14,11 @@ Después de completar este taller, deberías ser capaz de integrar OGC API - Fea
 
 Before starting the workshop, make sure that you have access to a computer with the following installed:
 
-_Antes de empezar el taller, asegúrate de tener acceso a un ordenador con lo siguiente instalado:_
+_Antes de empezar el taller, asegúrese de tener acceso a un ordenador con lo siguiente instalado:_
 
-* ✅ QGIS: you can follow the [instructions on the official website](https://qgis.org/resources/installation-guide/) to install it. | _QGIS: Puedes seguir las [instrucciones en el sitio web oficial](https://qgis.org/resources/installation-guide/) para instalarlo._
-* ✅ Jupyter notebook: You can follow [these](https://jupyter.org/install) instructions to install it with pip. | _Jupyter Notebook: Puedes seguir [estas](https://jupyter.org/install) instrucciones para instalarlo usando pip._
-* ✅ A text editor: I 💙 [VS code](https://code.visualstudio.com/), but feel free to choose whatever you like. | _Un editor de texto: Yo 💙 [VS code](https://code.visualstudio.com/), pero siéntete libre de usar el que prefieras._
+* ✅ QGIS: you can follow the [instructions on the official website](https://qgis.org/resources/installation-guide/) to install it. | _QGIS: Puede seguir las [instrucciones en el sitio web oficial](https://qgis.org/resources/installation-guide/) para instalarlo._
+* ✅ Jupyter notebook: You can follow [these](https://jupyter.org/install) instructions to install it with pip. | _Jupyter Notebook: Puede seguir [estas](https://jupyter.org/install) instrucciones para instalarlo usando pip._
+* ✅ A text editor: I 💙 [VS code](https://code.visualstudio.com/), but feel free to choose whatever you like. | _Un editor de texto: Yo 💙 [VS code](https://code.visualstudio.com/), pero siéntase libre de usar el que prefiera._
   
 ## Introduction| Introducción
 
@@ -36,7 +36,7 @@ https://emotional.byteroad.net/openapi?f=html
 
 Explore OGC API using different technologies.
 
-_Explora las OGC API usando diferentes tecnologías:_
+_Explore las OGC API usando diferentes tecnologías:_
 
 * [QGIS](QGIS.md)
 * [Python/OWSLib](python.md)
@@ -46,7 +46,7 @@ _Explora las OGC API usando diferentes tecnologías:_
 
 Continue your journey, by learning more about OGC API with these learning resources:
 
-_Continúa tu aprendizaje y profundiza más sobre la API de OGC con estos recursos:_
+_Continúe su aprendizaje y profundize más sobre la API de OGC con estos recursos:_
 
 * OGC API Workshop| _Taller de OGC API: https://ogcapi-workshop.ogc.org/_
 * pygeoapi Workshop| _Taller de pygeoapi: https://dive.pygeoapi.io/_
