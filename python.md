@@ -2,45 +2,34 @@
 
 In this section, we are going to use a jupyter notebook to explore an OGC API endpoint using [OWSLib](https://owslib.readthedocs.io/en/latest/).
 
-このセクションでは、[OWSLib](https://owslib.readthedocs.io/en/latest/) を使用して OGC API エンドポイントのcollectionを探索するために Jupyter Notebook を使用します。
+_En esta sección, vamos a utilizar un jupyter notebook para explorar un endpoint de la OGC API usando [OWSLib](https://owslib.readthedocs.io/en/latest/)._
 
-*OWSLib is a Python package for client programming with Open Geospatial Consortium (OGC) web service (hence OWS) interface standards, and their related content models. (OWSLib docs)*
+OWSLib is a Python package for client programming with Open Geospatial Consortium (OGC) web services (hence OWS) interface standards, and their related content models. (OWSLib docs).
 
-*OWSLib は、Open Geospatial Consortium （OGC） のウェブサービス （OWS） インターフェース標準および関連するコンテンツモデルとのクライアントプログラミング用の Python パッケージです。（OWSLib ドキュメント）*
+_OWSLib es un paquete de Python para la programación de clientes con los estándares de interfaz de servicios web (OWS) del Open Geospatial Consortium (OGC) y sus modelos de contenido relacionados. (Documentación de OWSLib)._
 
-## Windows
+## Windows (Anaconda)
 
-1. 演習用ファイルを[このページから`hello-ogcapi.ipynb`をダウンロード](https://github.com/ogcincubator/sushi-workshop/blob/master/hello-ogcapi.ipynb)。右側の [↓] アイコンをクリックする。
+1. `Anaconda (anaconda3)` > `Jupyter Notebook`
 
-2. `スタートメニュー` > `すべてのプログラム` > `Anaconda (anaconda3)` > `Jupyter Notebook` をクリック
+    ![start menu](img/10-find_jupyter.png)  ![launch Jupyter in Windows](img/11-launch_jupyter_windows.png)
 
-![start menu](img/10-find_jupyter.png)  ![launch Jupyter in Windows](img/11-launch_jupyter_windows.png)
-
-3. ウェブブラウザにJupyterが表示されたら、ダウンロードした`hello-ogcapi.ipynb`を`Upload`しダブルクリックして開く
+2. When Jupyter appears in your web browser, double-click the downloaded hello-ogcapi.ipynb to open it.| _Cuando Jupyter aparezca en su navegador web, haga doble clic en el hello-ogcapi.ipynb descargado para abrirlo._
 
 ![alt text](img/12-jupyter.png)
 
-![alt text](img/13-notebook.png)
+Follow the rest of the tutorial on the notebook.| _Siga el resto del tutorial en el notebook._
 
+## Mac/ Linux
 
-
-## Mac 
-
-Enter the command line on this folder and type:
-
-このフォルダーでコマンドラインを開き、次を入力します：
+Enter the command line on this folder and type:| _Entre en la línea de comando en esta carpeta y escriba:_
 
 ``` bash
 jupyter notebook
 ```
 
-Click on `hello-ogcapi.ipynb` to open it.
-
-`hello-ogcapi.ipynb` をクリックして開きます。
+Click on `hello-ogcapi.ipynb` to open it.| _Haga clic en `hello-ogcapi.ipynb` para abrirlo._
 
 ![Jupyter notebook](img/jupyter.png)
 
-Follow the rest of the tutorial on the notebook.
-
-ノートブックの残りのチュートリアルに従ってください。
-
+Follow the rest of the tutorial on the notebook.| _Siga el resto del tutorial en el notebook._
