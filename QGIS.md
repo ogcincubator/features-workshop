@@ -30,4 +30,6 @@
 
     ![View Layer](img/4_viewcollection.png)
 
-You can find more information on how-to style layers in QGIS on [this](https://docs.qgis.org/3.40/en/docs/user_manual/working_with_vector/vector_properties.html#index-1) and [this](https://docs.qgis.org/3.40/en/docs/training_manual/vector_classification/label_tool.html) pages of the official documentation.| _Puede encontrar más información sobre cómo aplicar estilos a capas en QGIS en [esta](https://docs.qgis.org/3.40/es/docs/user_manual/working_with_vector/vector_properties.html#index-1) y [esta](https://docs.qgis.org/3.40/es/docs/training_manual/vector_classification/label_tool.html) páginas de la documentación oficial._
+You can find more information on how-to style layers in QGIS on [this](https://docs.qgis.org/3.40/en/docs/user_manual/working_with_vector/vector_properties.html#index-1) and [this](https://docs.qgis.org/3.40/en/docs/training_manual/vector_classification/label_tool.html) pages of the official documentation.
+
+_Puede encontrar más información sobre cómo aplicar estilos a capas en QGIS en [esta](https://docs.qgis.org/3.40/es/docs/user_manual/working_with_vector/vector_properties.html#index-1) y [esta](https://docs.qgis.org/3.40/es/docs/training_manual/vector_classification/label_tool.html) páginas de la documentación oficial._
