@@ -1,4 +1,4 @@
-# Workshop: Integrating Data from OGC API into your Applications | Taller: Integración de Datos desde la API de OGC en tus Aplicaciones
+# Workshop: Integrating Data from OGC API into your Applications | Taller: Integración de Datos desde la OGC API en tus Aplicaciones
 
 This workshop shows different ways of consuming data from [OGC API - Features](https://features.developer.ogc.org/) services. After completing this workshop, you should be able to integrate OGC API - Features into your workflows.
 
